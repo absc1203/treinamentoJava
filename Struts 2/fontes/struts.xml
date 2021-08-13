@@ -1,0 +1,41 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+	<package name="pessoaaction" extends="struts-default">
+	
+		<action name="pessoa.cadastrar"
+			class="control.PessoaAction"
+			method="cadastrar">
+			<result name="success">/index.jsp</result>	
+		</action>
+		
+		<action name="pessoa.listar"
+			class="control.PessoaAction"
+			method="listar">
+			<result name="success">/listar.jsp</result>	
+		</action>
+		
+		<action name="pessoa.excluir"
+			class="control.PessoaAction"
+			method="excluir">
+			<result name="success">/listar.jsp</result>	
+		</action>
+		
+		<action name="pessoa.visualizar"
+			class="control.PessoaAction"
+			method="visualizar">
+			<result name="success">/editar.jsp</result>	
+		</action>
+		
+		<action name="pessoa.editar"
+			class="control.PessoaAction"
+			method="editar">
+			<result name="success">/listar.jsp</result>	
+		</action>
+	
+	</package>
+	
+</struts>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+  
+  <!DOCTYPE validators PUBLIC   
+        "-//OpenSymphony Group//XWork Validator 1.0.2//EN"   
+        "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+
+	<field name="pessoa.nome">
+		<field-validator type="requiredstring">
+			<message>Informe o nome da pessoa.</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">^[A-Za-z\s]{3,50}$</param>
+			<message>Erro. Nome invalido.</message>
+		</field-validator>
+	</field>
+
+	<field name="pessoa.email">
+		<field-validator type="requiredstring">
+			<message>Informe o email da pessoa.</message>
+		</field-validator>
+		<field-validator type="email">
+			<message>Erro. Email invalido.</message>
+		</field-validator>
+	</field>
+
+</validators>  
