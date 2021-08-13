@@ -24,7 +24,7 @@ public class ItemProdutoDAO extends DAO implements IItemProdutoDAO {
 		
 		
 		close();
-		return "Protudo e item produto gravados com sucesso!";
+		return "Produto e item produto gravados com sucesso!";
 	}
 	
 	
