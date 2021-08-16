@@ -4,20 +4,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Register</title>
+<title>Registrar</title>
 <style type="text/css">
 .button-register {background-color: green;color: white;}
 .button-report {background-color: #000000;color: white;margin-left: 30%;}
 </style>
 </head>
 <body>
-	<h2>Struts 2 Create, Read, Update and Delete (CRUD) Example using JDBC</h2>
-	<a href="report"><button class="button-report" type="button">Report</button></a>
+	<a href="report"><button class="button-report" type="button">Consulta</button></a>
 	<s:form action="registeruser.action" method="post">
-		<s:textfield label="Full Name" name="uname" />
-		<s:textfield label="Email" name="uemail" />
-		<s:password label="Password" name="upass" />
-		<s:submit cssClass="button-register" value="Resgister" />
+		<s:textfield label="Nome completo" name="" />
+		<s:textfield label="Email" name="" />
+		<s:password label="Senha" name="" />
+		<s:submit cssClass="button-register" value="Registrar" />
 	</s:form>
 	<s:if test="ctr>0">
 		<span style="color: green;"><s:property value="msg" /></span>
