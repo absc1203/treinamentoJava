@@ -5,10 +5,10 @@
 <struts>
 	<package name="projetostruts" extends="struts-default">
 	
-	<action name="pessoaaction" class="br.com.stefanini.projetostruts.controller.PessoaAction">
+	<action name="" class="br.com.stefanini.exercicioDois.controller.UsuarioAction">
 		<result name="input">/index.jsp</result>
-		<result name="success">/saida.jsp</result>
-		<result name="error">/erro.jsp</result>
 	</action>
+	
+	
 	</package>
 </struts>
