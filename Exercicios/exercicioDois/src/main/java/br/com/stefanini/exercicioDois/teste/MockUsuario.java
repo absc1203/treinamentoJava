@@ -8,7 +8,19 @@ import br.com.stefanini.exercicioDois.persistence.UsuarioDAO;
 public class MockUsuario {
 
 	public static void main(String[] args) {
-
+		
+		MockUsuario usuarioMock = new MockUsuario();
+		UsuarioDAO usuarioDAO = new UsuarioDAO();
+		
+		try {
+			Usuario usuario = usuarioDAO.findById(20);
+			usuario.setNome("TesteAlteradoMock");
+			usuarioMock.upudateUsuarioMock(usuario);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
 	}
 
 	public void findAllUsuarioMock() {
